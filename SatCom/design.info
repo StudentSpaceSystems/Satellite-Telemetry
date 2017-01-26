@@ -1,0 +1,25 @@
+(01) Accept data over various listeners
+(02) Format data into packets
+(03) Transmit packets
+
+--- (01) ---
+Receives data over wire in separated processes/threads
+1 Process per type (I2C, UART, SPI) with multiple threads for multiple streams (e.g. I2C 1 and I2C 2)
+
+--- (02) ---
+Accepts data from shared processes/threading and formats into subpacket
+
+--- (03) ---
+Compress packet and push to buffer/-queue
+
+--- (NOTES) ---
+Multiple connections can be made to the Raspberry Pi (I2C 2x, UART 1x, SPI 2x) allowing for potentially 5 sources to directly interface with the Raspberry Pi
+
+RPI-Arduino I2C: (apparently slow)
+	https://oscarliang.com/raspberry-pi-arduino-connected-i2c/
+	http://www.instructables.com/id/Raspberry-Pi-I2C-Python/?ALLSTEPS
+RPI-Arduino SPI: (preferred)
+	http://mitchtech.net/raspberry-pi-arduino-spi/
+	http://hackaday.com/2013/01/06/hardware-spi-with-python-on-a-raspberry-pi/
+RPI-Arduino UART: (best unidirectional)
+	http://www.andremiller.net/content/raspberry-pi-and-arduino-via-gpio-uart
