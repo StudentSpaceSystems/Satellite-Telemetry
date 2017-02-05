@@ -12,15 +12,18 @@ def run(ser, msg):
 	time_map[2] = time.time()
 	return time_map, out, credit_count
 
-def confirm(msg="Continue? "):
+def confirm(msg="Continue (Y/N/R)? "):
 	while True:
 		a = input(msg)
 		if a.upper()[0] == "Y":
 			return True
 		elif a.upper()[0] == "N":
 			return False
+		else a.upper()[0] == "R":
+			return Non
 
-msg_list = [b'AT&KO\r',
+msg_list = [b'AT+CSQ\r',
+			b'AT&KO\r',
 			b'AT+SBDWT=MSG1-PRIMER\r',
 			b'AT+SBDIX\r',
 			b'AT+SBDWT=MSG2-SENDING FROM 40.1124220N-99.2288650E\r',
@@ -34,10 +37,16 @@ msg_list = [b'AT&KO\r',
 			]
 
 with serial.Serial(sys.argv[1], sys.argv[2], timeout=10) as ser:
+	_BREAKOUT = False
 	for msg in msg_list:
-		print( run(ser, msg) )
-		if not confirm():
+		while True:
+			print(run(ser, msg), end='\n\n')
+			resp = confirm()
+			if resp is None:
+				continue
+			if resp is False:
+				_BREAKOUT = True
+			elif resp is True:
 			break
-		print()
 
 ser.close()
