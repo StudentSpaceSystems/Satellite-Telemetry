@@ -1,0 +1,49 @@
+Starting b'AT+CSQ\r'
+([1486607502.4221745, 1486607502.4221926, 1486607503.9321234], b'AT+CSQ\r\r\n+CSQ:4\r\n\r\nOK\r\n', 7)
+Continue (Y/N/R)? y
+
+Starting b'AT&KO\r'
+([1486607505.4508882, 1486607505.4509983, 1486607515.4752522], b'AT&KO\r\r\nERROR\r\n', 6)
+Continue (Y/N/R)? y
+
+Starting b'AT+SBDWT=MSG1-PRIMER\r'
+([1486607518.0342808, 1486607518.0343485, 1486607518.058566], b'AT+SBDWT=MSG1-PRIMER\r\r\nOK\r\n', 21)
+Continue (Y/N/R)? y
+
+Starting b'AT+SBDIX\r'
+([1486607522.2205796, 1486607522.2206597, 1486607532.2438881], b'AT+SBDIX\r', 9)
+Continue (Y/N/R)? y
+
+Starting b'AT+SBDWT=MSG2-SENDING FROM 40.1124220N-99.2288650E\r'
+([1486607533.7175274, 1486607533.7176, 1486607537.59462], b'\r\n+SBDIX: 0, 4, 0, 0, 0, 0\r\n\r\nOK\r\n', 51)
+Continue (Y/N/R)? y
+
+Starting b'AT+SBDIX\r'
+([1486607539.2646005, 1486607539.2646663, 1486607539.3083951], b'AT+SBDWT=MSG2-SENDING FROM 40.1124220N-99.2288650E\rAT+SBDIX\r\r\nOK\r\n', 9)
+Continue (Y/N/R)? y
+
+Starting b'AT+SBDWT=MSG3-ASCII:TXRAW:\xf2\xf3\r'
+([1486607540.9941263, 1486607540.9941993, 1486607541.0232308], b'AT+SBDWT=MSG3-ASCII:TXRAW:\xf2\xf3\r\r\nOK\r\n', 29)
+Continue (Y/N/R)? y
+
+Starting b'AT+SBDIX\r'
+([1486607546.3285577, 1486607546.32862, 1486607556.3519838], b'AT+SBDIX\r', 9)
+Continue (Y/N/R)? y
+
+Starting b'AT+SBDWT=MSG4-Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse\r'
+([1486607558.9228578, 1486607558.988398, 1486607558.9891932], b'\r\n+SBDIX: 0, 5, 0, 0, 0, 0\r\n\r\nOK\r\n', 307)
+Continue (Y/N/R)? y
+
+Starting b'AT+SBDIX\r'
+([1486607560.801309, 1486607560.801375, 1486607569.6360793], b'AT+SBDWT=MSG4-Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse\r\r\nERROR\r\nAT+SBDIX\r\r\n+SBDIX: 0, 6, 0, 0, 0, 0\r\n\r\nOK\r\n', 9)
+Continue (Y/N/R)? y
+
+Starting b'AT+SBDWT=MSG5-3PACKETTEST\xf4\x95ZO\x88\xd9\xd2\xc4\xa1K\xfa\xef\xf7\xea\x8aL\x14\x9d\xd5.\xc6\xfbU\x02\xfd\xd3\x94\xd2\x06@j*\xcf\x1d9\xb5L\xdd\xcb;Y8[U\xd1\xaa\x82\xb5 \\\xfd\xc7(=m\xa6\xaeE\xbb\xdf\xc7/1\xa25H\xf2\x03\x05g]\x07\xad\xe6\x86\xf2\xba\xc2@\xf2\x83d\x01\x95\xac\xcb\xe2\x13A`\xc2{B\x98\x16\xd0\xb1\x1c[\xb3b=w\x14\xa1V\xb1\xbf\xf9~\xf49\xdfNY\xea\xe8\r'
+([1486607574.2176828, 1486607574.2178018, 1486607584.3182104], b'AT+SBDWT=MSG5-3PACKETTEST\xf4\x95ZO\x08 \x08\xd9\xd2\xc4\xa1K\xfa\xef\xf7\xea\x8aL\x14\x9d\xd5.\xc6\xfbU\x02\xfd\xd3\x94\xd2\x06@j*\xcf\x1d9\xb5L\xdd\xcb;Y8[U\xd1\xaa\x82\xb5 \\\xfd\xc7(=m\xa6\xaeE\xbb\xdf\xc7/1\xa25H\xf2\x03\x05g]\x07\xad\xe6\x86\xf2\xba\xc2@\xf2\x83d\x01\x95\xac\xcb\xe2\x13A`\xc2{B\x98\x16\xd0\xb1\x1c[\xb3b=w\x14\xa1V\xb1\xbf\xf9~\xf49\xdfNY\xea\xe8\r\r\nERROR\r\n', 143)
+Continue (Y/N/R)? y
+
+Starting b'AT+SBDIX\r'
+^[[B([1486607586.3107018, 1486607586.3107877, 1486607596.3335826], b'AT+SBDIX\r', 9)
+Continue (Y/N/R)? y
+Continue (Y/N/R)? y
+

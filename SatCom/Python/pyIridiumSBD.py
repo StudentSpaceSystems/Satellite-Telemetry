@@ -60,9 +60,6 @@ class IridiumSBD:
 		return (self.ser.in_waiting,
 				self.ser.out_waiting)
 	
-	def set_nonblocking(self):
-		self.ser.nonblocking()
-	
 	@staticmethod
 	def form_packet_size(iterable, size, inclusive=False):
 		_packet = bytes(size)
