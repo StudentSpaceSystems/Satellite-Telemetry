@@ -1,0 +1,3 @@
+Amend packet_format.ods "Linear Packet - Short" and "Quadratic Packet Short" to only carry delta's for mission-critical readings (accel/ gyro) and re-measure the estimated per-transmission information density.
+
+For each schema, for order n, we consider the coefficient of determination of n-nomial regression of acceleration and max(1, n-1)-nomial regression of angular velocity.  The schema with the highest such coefficient is used to pass data to packet-generator.
